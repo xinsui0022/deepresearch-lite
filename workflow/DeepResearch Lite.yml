@@ -10,6 +10,11 @@ dependencies:
 - current_identifier: null
   type: marketplace
   value:
+    marketplace_plugin_unique_identifier: langgenius/jina_tool:0.0.14@34acedc392175bc83ba1cb78ced9c134983e94488198a4641951b52075bfe555
+    version: null
+- current_identifier: null
+  type: marketplace
+  value:
     marketplace_plugin_unique_identifier: langgenius/siliconflow:0.0.60@da35e834379c3c2abe0081ef1e2da9fce54bb18ae48cc3e9b3e7738816281fb4
     version: null
 - current_identifier: null
@@ -120,6 +125,7 @@ workflow:
         sourceType: code
         targetType: tool
       id: 1789109728806-source-1789108772045-target
+      selected: false
       source: '1789109728806'
       sourceHandle: source
       target: '1789108772045'
@@ -127,30 +133,206 @@ workflow:
       type: custom
       zIndex: 1001
     - data:
-        isInIteration: false
-        isInLoop: false
-        sourceType: iteration
-        targetType: end
-      id: 1789108118909-source-1789104658680-target
-      source: '1789108118909'
-      sourceHandle: source
-      target: '1789104658680'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
         isInIteration: true
         isInLoop: false
         iteration_id: '1789108118909'
         sourceType: tool
         targetType: code
       id: 1789108772045-source-1789111514484-target
+      selected: false
       source: '1789108772045'
       sourceHandle: source
       target: '1789111514484'
       targetHandle: target
       type: custom
       zIndex: 1001
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: iteration
+        targetType: code
+      id: 1789108118909-source-1789114695074-target
+      selected: false
+      source: '1789108118909'
+      sourceHandle: source
+      target: '1789114695074'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: code
+      id: 1789114695074-source-1789115103181-target
+      selected: false
+      source: '1789114695074'
+      sourceHandle: source
+      target: '1789115103181'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: code
+      id: 1789115103181-source-1789115796995-target
+      selected: false
+      source: '1789115103181'
+      sourceHandle: source
+      target: '1789115796995'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: iteration
+      id: 1789115796995-source-1789118240503-target
+      selected: false
+      source: '1789115796995'
+      sourceHandle: source
+      target: '1789118240503'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1789118240503'
+        sourceType: iteration-start
+        targetType: code
+      id: 1789118240503start-source-1789118437209-target
+      selected: false
+      source: 1789118240503start
+      sourceHandle: source
+      target: '1789118437209'
+      targetHandle: target
+      type: custom
+      zIndex: 1001
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1789118240503'
+        sourceType: code
+        targetType: tool
+      id: 1789118437209-source-1789118921873-target
+      selected: false
+      source: '1789118437209'
+      sourceHandle: source
+      target: '1789118921873'
+      targetHandle: target
+      type: custom
+      zIndex: 1001
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1789118240503'
+        sourceType: tool
+        targetType: code
+      id: 1789118921873-source-1789120705703-target
+      selected: false
+      source: '1789118921873'
+      sourceHandle: source
+      target: '1789120705703'
+      targetHandle: target
+      type: custom
+      zIndex: 1001
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: iteration
+        targetType: iteration
+      id: 1789118240503-source-1789122904698-target
+      selected: false
+      source: '1789118240503'
+      sourceHandle: source
+      target: '1789122904698'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1789122904698'
+        sourceType: llm
+        targetType: code
+      id: 1789122946667-source-1789123637835-target
+      selected: false
+      source: '1789122946667'
+      sourceHandle: source
+      target: '1789123637835'
+      targetHandle: target
+      type: custom
+      zIndex: 1001
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1789122904698'
+        sourceType: iteration-start
+        targetType: code
+      id: 1789122904698start-source-1789130377096-target
+      selected: false
+      source: 1789122904698start
+      sourceHandle: source
+      target: '1789130377096'
+      targetHandle: target
+      type: custom
+      zIndex: 1001
+    - data:
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1789122904698'
+        sourceType: code
+        targetType: llm
+      id: 1789130377096-source-1789122946667-target
+      selected: false
+      source: '1789130377096'
+      sourceHandle: source
+      target: '1789122946667'
+      targetHandle: target
+      type: custom
+      zIndex: 1001
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: iteration
+        targetType: code
+      id: 1789122904698-source-1789131224516-target
+      selected: false
+      source: '1789122904698'
+      sourceHandle: source
+      target: '1789131224516'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: llm
+      id: 1789131224516-source-1789131912057-target
+      selected: false
+      source: '1789131224516'
+      sourceHandle: source
+      target: '1789131912057'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: end
+      id: 1789131912057-source-1789104658680-target
+      source: '1789131912057'
+      sourceHandle: source
+      target: '1789104658680'
+      targetHandle: target
+      type: custom
+      zIndex: 0
     nodes:
     - data:
         selected: false
@@ -217,7 +399,9 @@ workflow:
             \ it should not replace current information.\n\n6. For topics that are\
             \ not time-sensitive, do not add unnecessary year constraints.\n\n# Research\
             \ Topic\n\n{{{#1789104648335.research_topic#}}\n\n# Current Date\n2026-09-11\n\
-            \n# Output\n\nReturn structured data matching the configured schema."
+            \n# Output\n\nReturn structured data matching the configured schema.\n\
+            \nEach item must contain both a non-empty \"dimension\" and a non-empty\
+            \ \"query\".\nNever omit either field."
         reasoning_format: separated
         selected: false
         structured_output:
@@ -267,9 +451,9 @@ workflow:
     - data:
         outputs:
         - value_selector:
-          - '1789108118909'
-          - output
-          value_type: array[object]
+          - '1789131912057'
+          - text
+          value_type: string
           variable: structured_output
         selected: false
         title: 输出
@@ -277,11 +461,11 @@ workflow:
       height: 87
       id: '1789104658680'
       position:
-        x: 1466.98098060364
-        y: -70.47067192438212
+        x: 5067.091403963724
+        y: 244.57252702235357
       positionAbsolute:
-        x: 1466.98098060364
-        y: -70.47067192438212
+        x: 5067.091403963724
+        y: 244.57252702235357
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -2317,11 +2501,14 @@ workflow:
           \ dict):\n        data = item\n    elif isinstance(item, str):\n       \
           \ try:\n            data = json.loads(item)\n        except json.JSONDecodeError:\n\
           \            data = ast.literal_eval(item)\n    else:\n        raise ValueError(f\"\
-          Unsupported item type: {type(item)}\")\n\n    return {\n        \"query\"\
-          : str(data[\"query\"]).strip(),\n        \"dimension\": str(data[\"dimension\"\
-          ]).strip()\n    }"
+          Unsupported item type: {type(item)}\")\n\n    query = str(data.get(\"query\"\
+          , \"\")).strip()\n    dimension = str(data.get(\"dimension\", \"\")).strip()\n\
+          \n    if not query:\n        raise ValueError(\"query is missing\")\n\n\
+          \    if not dimension:\n        dimension = \"general research\"\n\n   \
+          \ return {\n        \"query\": query,\n        \"dimension\": dimension\n\
+          \    }"
         code_language: python3
-        desc: Parse Search Task
+        desc: ''
         isInIteration: true
         isInLoop: false
         iteration_id: '1789108118909'
@@ -2333,7 +2520,7 @@ workflow:
             children: null
             type: string
         selected: false
-        title: 代码执行
+        title: Parse Search Task
         type: code
         variables:
         - value_selector:
@@ -2341,7 +2528,7 @@ workflow:
           - item
           value_type: string
           variable: item
-      height: 79
+      height: 51
       id: '1789109728806'
       parentId: '1789108118909'
       position:
@@ -2369,7 +2556,7 @@ workflow:
           : float(result.get(\"score\", 0) or 0)\n        })\n\n    return {\n   \
           \     \"normalized_results\": normalized_results\n    }"
         code_language: python3
-        desc: Normalize Search Results
+        desc: ''
         isInIteration: true
         isInLoop: false
         iteration_id: '1789108118909'
@@ -2378,7 +2565,7 @@ workflow:
             children: null
             type: array[object]
         selected: false
-        title: 代码执行 2
+        title: Normalize Search Results
         type: code
         variables:
         - value_selector:
@@ -2396,7 +2583,7 @@ workflow:
           - json
           value_type: array[object]
           variable: tavily_json
-      height: 79
+      height: 51
       id: '1789111514484'
       parentId: '1789108118909'
       position:
@@ -2411,8 +2598,1408 @@ workflow:
       type: custom
       width: 241
       zIndex: 1001
+    - data:
+        code: "import re\nfrom urllib.parse import urlsplit, parse_qsl, urlencode\n\
+          \n\nTRACKING_PARAMS = {\n    \"spm\",\n    \"from\",\n    \"source\",\n\
+          \    \"ref\",\n    \"referrer\",\n    \"campaign\",\n    \"track\",\n}\n\
+          \n\ndef clean_url(url: str) -> str:\n    url = (url or \"\").strip()\n\n\
+          \    # 防御 Markdown 链接：\n    # [https://a.com](https://a.com)\n    match\
+          \ = re.fullmatch(r\"\\[(https?://[^\\]]+)\\]\\((https?://[^)]+)\\)\", url)\n\
+          \    if match:\n        url = match.group(2)\n\n    return url\n\n\ndef\
+          \ get_domain(url: str) -> str:\n    host = urlsplit(url).netloc.lower()\n\
+          \n    if host.startswith(\"www.\"):\n        host = host[4:]\n\n    return\
+          \ host\n\n\ndef make_url_key(url: str) -> str:\n    \"\"\"\n    用于去重的 URL\
+          \ key。\n    不直接修改后续真正访问时使用的原始 URL。\n    \"\"\"\n    parts = urlsplit(url)\n\
+          \n    host = parts.netloc.lower()\n    if host.startswith(\"www.\"):\n \
+          \       host = host[4:]\n\n    path = parts.path.rstrip(\"/\") or \"/\"\n\
+          \n    query_items = []\n\n    for key, value in parse_qsl(parts.query, keep_blank_values=True):\n\
+          \        lower_key = key.lower()\n\n        if lower_key.startswith(\"utm_\"\
+          ):\n            continue\n\n        if lower_key in TRACKING_PARAMS:\n \
+          \           continue\n\n        query_items.append((key, value))\n\n   \
+          \ query_items.sort()\n\n    query = urlencode(query_items, doseq=True)\n\
+          \n    # 故意忽略 http / https 的区别\n    return f\"{host}{path}?{query}\" if query\
+          \ else f\"{host}{path}\"\n\n\ndef classify_source(domain: str) -> str:\n\
+          \    \"\"\"\n    这里只做基础规则分类。\n    不是最终的“权威性判断”。\n    \"\"\"\n\n    if domain.endswith(\"\
+          .gov.cn\") or domain.endswith(\"gov.cn\"):\n        return \"government\"\
+          \n\n    if domain.endswith(\".edu.cn\"):\n        return \"education\"\n\
+          \n    if domain.endswith(\".org.cn\"):\n        return \"organization\"\n\
+          \n    job_platforms = {\n        \"liepin.com\",\n        \"zhaopin.com\"\
+          ,\n        \"51job.com\",\n        \"bosszhipin.com\",\n        \"gaoxiaojob.com\"\
+          ,\n        \"indeed.com\",\n        \"cn.indeed.com\",\n    }\n\n    news_media\
+          \ = {\n        \"xinhuanet.com\",\n        \"chinadaily.com.cn\",\n    \
+          \    \"stdaily.com\",\n        \"stcn.com\",\n        \"dayoo.com\",\n \
+          \       \"people.com.cn\",\n    }\n\n    developer_communities = {\n   \
+          \     \"csdn.net\",\n        \"juejin.cn\",\n        \"zhihu.com\",\n  \
+          \  }\n\n    if domain in job_platforms or any(\n        domain.endswith(\"\
+          .\" + d) for d in job_platforms\n    ):\n        return \"job_platform\"\
+          \n\n    if domain in news_media or any(\n        domain.endswith(\".\" +\
+          \ d) for d in news_media\n    ):\n        return \"news_media\"\n\n    if\
+          \ domain in developer_communities or any(\n        domain.endswith(\".\"\
+          \ + d) for d in developer_communities\n    ):\n        return \"developer_community\"\
+          \n\n    return \"other\"\n\n\ndef main(results: list) -> dict:\n    merged\
+          \ = {}\n\n    for item in results:\n        url = clean_url(str(item.get(\"\
+          url\", \"\")))\n\n        if not url:\n            continue\n\n        key\
+          \ = make_url_key(url)\n\n        dimension = str(item.get(\"dimension\"\
+          , \"\")).strip()\n        query = str(item.get(\"query\", \"\")).strip()\n\
+          \        title = str(item.get(\"title\", \"\")).strip()\n        snippet\
+          \ = str(item.get(\"snippet\", \"\")).strip()\n\n        try:\n         \
+          \   score = float(item.get(\"search_score\", 0) or 0)\n        except (TypeError,\
+          \ ValueError):\n            score = 0.0\n\n        if key not in merged:\n\
+          \            domain = get_domain(url)\n\n            merged[key] = {\n \
+          \               \"title\": title,\n                \"url\": url,\n     \
+          \           \"domain\": domain,\n                \"source_type\": classify_source(domain),\n\
+          \                \"dimensions\": [],\n                \"queries\": [],\n\
+          \                \"snippet\": snippet,\n                \"search_score\"\
+          : score,\n            }\n\n        source = merged[key]\n\n        if dimension\
+          \ and dimension not in source[\"dimensions\"]:\n            source[\"dimensions\"\
+          ].append(dimension)\n\n        if query and query not in source[\"queries\"\
+          ]:\n            source[\"queries\"].append(query)\n\n        # 同一个 URL 多次被搜到时，保留最高\
+          \ Tavily score\n        if score > source[\"search_score\"]:\n         \
+          \   source[\"search_score\"] = score\n            source[\"title\"] = title\
+          \ or source[\"title\"]\n\n        # 暂时保留信息量更大的 snippet\n        if len(snippet)\
+          \ > len(source[\"snippet\"]):\n            source[\"snippet\"] = snippet\n\
+          \n    return {\n        \"sources\": list(merged.values())\n    }"
+        code_language: python3
+        desc: ''
+        outputs:
+          sources:
+            children: null
+            type: array[object]
+        selected: false
+        title: Prepare Sources
+        type: code
+        variables:
+        - value_selector:
+          - '1789108118909'
+          - output
+          value_type: array[object]
+          variable: results
+      height: 51
+      id: '1789114695074'
+      position:
+        x: 1767.7372396241694
+        y: 162.5985562869263
+      positionAbsolute:
+        x: 1767.7372396241694
+        y: 162.5985562869263
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 0
+    - data:
+        code: "import re\nfrom datetime import datetime\n\n\nCURRENT_YEAR = datetime.now().year\n\
+          \n\nBASE_AUTHORITY = {\n    \"government\": 0.90,\n    \"education\": 0.85,\n\
+          \    \"organization\": 0.80,\n    \"news_media\": 0.75,\n    \"job_platform\"\
+          : 0.72,\n    \"company\": 0.72,\n    \"developer_community\": 0.45,\n  \
+          \  \"other\": 0.55,\n}\n\n\ndef clamp(value, low=0.0, high=1.0):\n    return\
+          \ max(low, min(high, value))\n\n\ndef domain_matches(domain: str, target:\
+          \ str) -> bool:\n    return domain == target or domain.endswith(\".\" +\
+          \ target)\n\n\ndef refine_source_type(source_type: str, domain: str) ->\
+          \ str:\n    \"\"\"\n    对 Prepare Sources 中没覆盖到的少数常见域名做补充。\n    后续可以继续扩展白名单。\n\
+          \    \"\"\"\n    news_domains = {\n        \"sina.com.cn\",\n        \"\
+          xinhuanet.com\",\n        \"chinadaily.com.cn\",\n        \"stdaily.com\"\
+          ,\n        \"stcn.com\",\n        \"dayoo.com\",\n        \"people.com.cn\"\
+          ,\n    }\n\n    organization_domains = {\n        \"wrsa.net\",\n      \
+          \  \"miitec.cn\",\n    }\n\n    company_domains = {\n        \"ibm.com\"\
+          ,\n    }\n\n    for d in news_domains:\n        if domain_matches(domain,\
+          \ d):\n            return \"news_media\"\n\n    for d in organization_domains:\n\
+          \        if domain_matches(domain, d):\n            return \"organization\"\
+          \n\n    for d in company_domains:\n        if domain_matches(domain, d):\n\
+          \            return \"company\"\n\n    return source_type or \"other\"\n\
+          \n\ndef calculate_authority(source_type: str, dimensions: list) -> float:\n\
+          \    \"\"\"\n    来源质量不是固定的，而要结合研究维度。\n    \"\"\"\n\n    score = BASE_AUTHORITY.get(source_type,\
+          \ 0.55)\n    dimension_text = \" \".join(dimensions)\n\n    # 招聘、薪资、岗位类问题：\n\
+          \    # 招聘平台是直接数据源，因此给予额外权重。\n    if any(\n        key in dimension_text\n\
+          \        for key in [\"招聘\", \"薪资\", \"就业\", \"岗位\", \"任职\", \"技能\"]\n \
+          \   ):\n        if source_type == \"job_platform\":\n            score +=\
+          \ 0.15\n        elif source_type in {\n            \"government\",\n   \
+          \         \"education\",\n            \"organization\",\n            \"\
+          news_media\",\n        }:\n            score += 0.05\n\n    # 政策、产业环境类问题：\n\
+          \    # 政府原始来源更重要。\n    if any(\n        key in dimension_text\n        for\
+          \ key in [\"政策\", \"产业\", \"环境\", \"发展\", \"规划\"]\n    ):\n        if source_type\
+          \ == \"government\":\n            score += 0.10\n        elif source_type\
+          \ in {\"organization\", \"news_media\"}:\n            score += 0.05\n\n\
+          \    # 教育、人才培养类问题\n    if any(\n        key in dimension_text\n        for\
+          \ key in [\"教育\", \"高校\", \"培养\", \"人才\"]\n    ):\n        if source_type\
+          \ == \"education\":\n            score += 0.10\n        elif source_type\
+          \ in {\"government\", \"organization\"}:\n            score += 0.07\n\n\
+          \    return clamp(score)\n\n\ndef extract_published_year(source: dict):\n\
+          \    \"\"\"\n    优先从标题和 URL 判断年份。\n    snippet 只作为 fallback，避免把文章中的未来预测年份\n\
+          \    错认为发布时间。\n    \"\"\"\n\n    primary_text = (\n        str(source.get(\"\
+          title\", \"\"))\n        + \" \"\n        + str(source.get(\"url\", \"\"\
+          ))\n    )\n\n    years = [\n        int(x)\n        for x in re.findall(r\"\
+          20\\d{2}\", primary_text)\n    ]\n\n    valid_years = [\n        y for y\
+          \ in years\n        if 2000 <= y <= CURRENT_YEAR\n    ]\n\n    if valid_years:\n\
+          \        return max(valid_years)\n\n    # fallback：只检查 snippet 前一小段\n  \
+          \  snippet = str(source.get(\"snippet\", \"\"))[:500]\n\n    years = [\n\
+          \        int(x)\n        for x in re.findall(r\"20\\d{2}\", snippet)\n \
+          \   ]\n\n    valid_years = [\n        y for y in years\n        if 2000\
+          \ <= y <= CURRENT_YEAR\n    ]\n\n    if valid_years:\n        return max(valid_years)\n\
+          \n    return None\n\n\ndef calculate_freshness(year):\n    if year is None:\n\
+          \        return 0.55\n\n    age = CURRENT_YEAR - year\n\n    if age <= 0:\n\
+          \        return 1.00\n    elif age == 1:\n        return 0.85\n    elif\
+          \ age == 2:\n        return 0.70\n    elif age == 3:\n        return 0.55\n\
+          \    else:\n        return 0.40\n\n\ndef calculate_coverage(source: dict):\n\
+          \    query_count = len(set(source.get(\"queries\", [])))\n    dimension_count\
+          \ = len(set(source.get(\"dimensions\", [])))\n\n    score = 0.55\n\n   \
+          \ # 被不同 Query 重复搜到，说明可能较重要\n    score += max(0, query_count - 1) * 0.15\n\
+          \n    # 同时覆盖多个研究维度，也给予少量奖励\n    score += max(0, dimension_count - 1) * 0.10\n\
+          \n    return clamp(score)\n\n\ndef main(sources: list) -> dict:\n    ranked\
+          \ = []\n\n    for source in sources:\n        item = dict(source)\n\n  \
+          \      domain = str(item.get(\"domain\", \"\")).lower()\n        source_type\
+          \ = refine_source_type(\n            str(item.get(\"source_type\", \"other\"\
+          )),\n            domain\n        )\n\n        dimensions = item.get(\"dimensions\"\
+          , []) or []\n\n        try:\n            search_score = float(\n       \
+          \         item.get(\"search_score\", 0) or 0\n            )\n        except\
+          \ (TypeError, ValueError):\n            search_score = 0.0\n\n        search_score\
+          \ = clamp(search_score)\n\n        authority_score = calculate_authority(\n\
+          \            source_type,\n            dimensions\n        )\n\n       \
+          \ published_year = extract_published_year(item)\n\n        freshness_score\
+          \ = calculate_freshness(\n            published_year\n        )\n\n    \
+          \    coverage_score = calculate_coverage(item)\n\n        rank_score = (\n\
+          \            search_score * 0.50\n            + authority_score * 0.25\n\
+          \            + freshness_score * 0.15\n            + coverage_score * 0.10\n\
+          \        )\n\n        item[\"source_type\"] = source_type\n        item[\"\
+          published_year\"] = published_year\n        item[\"authority_score\"] =\
+          \ round(\n            authority_score, 4\n        )\n        item[\"freshness_score\"\
+          ] = round(\n            freshness_score, 4\n        )\n        item[\"coverage_score\"\
+          ] = round(\n            coverage_score, 4\n        )\n        item[\"rank_score\"\
+          ] = round(\n            rank_score, 4\n        )\n\n        ranked.append(item)\n\
+          \n    ranked.sort(\n        key=lambda x: x[\"rank_score\"],\n        reverse=True\n\
+          \    )\n\n    for index, item in enumerate(ranked, start=1):\n        item[\"\
+          rank\"] = index\n\n    return {\n        \"ranked_sources\": ranked\n  \
+          \  }"
+        code_language: python3
+        desc: ''
+        outputs:
+          ranked_sources:
+            children: null
+            type: array[object]
+        selected: false
+        title: Source Ranking
+        type: code
+        variables:
+        - value_selector:
+          - '1789114695074'
+          - sources
+          value_type: array[object]
+          variable: sources
+      height: 51
+      id: '1789115103181'
+      position:
+        x: 1953.003095180816
+        y: 0.19017641584048306
+      positionAbsolute:
+        x: 1953.003095180816
+        y: 0.19017641584048306
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 0
+    - data:
+        code: "def main(ranked_sources: list) -> dict:\n    if not ranked_sources:\n\
+          \        return {\n            \"selected_sources\": []\n        }\n\n \
+          \   # 每个研究维度至少争取保留多少来源\n    MIN_PER_DIMENSION = 2\n\n    # 最终最多进入 Crawl\
+          \ 的来源数量\n    MAX_TOTAL = 4\n\n    # 分数太低的来源暂时不进入下一阶段\n    MIN_RANK_SCORE\
+          \ = 0.60\n\n    selected = []\n    selected_urls = set()\n\n    # 找到本次研究涉及的全部维度\n\
+          \    dimensions = []\n\n    for source in ranked_sources:\n        for dimension\
+          \ in source.get(\"dimensions\", []):\n            if dimension not in dimensions:\n\
+          \                dimensions.append(dimension)\n\n    # --------------------------------------------------\n\
+          \    # 1. 先保证每个维度有基本覆盖\n    # --------------------------------------------------\n\
+          \n    for dimension in dimensions:\n        dimension_sources = []\n\n \
+          \       for source in ranked_sources:\n            if (\n              \
+          \  dimension in source.get(\"dimensions\", [])\n                and source.get(\"\
+          rank_score\", 0) >= MIN_RANK_SCORE\n            ):\n                dimension_sources.append(source)\n\
+          \n        # ranked_sources 本来已经按 rank_score 排序\n        for source in dimension_sources[:MIN_PER_DIMENSION]:\n\
+          \            url = source.get(\"url\")\n\n            if url and url not\
+          \ in selected_urls:\n                selected.append(source)\n         \
+          \       selected_urls.add(url)\n\n    # --------------------------------------------------\n\
+          \    # 2. 剩余位置按全局排名补齐\n    # --------------------------------------------------\n\
+          \n    for source in ranked_sources:\n        if len(selected) >= MAX_TOTAL:\n\
+          \            break\n\n        if source.get(\"rank_score\", 0) < MIN_RANK_SCORE:\n\
+          \            continue\n\n        url = source.get(\"url\")\n\n        if\
+          \ url and url not in selected_urls:\n            selected.append(source)\n\
+          \            selected_urls.add(url)\n\n    # --------------------------------------------------\n\
+          \    # 3. 最终重新按照 rank_score 排序\n    # --------------------------------------------------\n\
+          \n    selected.sort(\n        key=lambda x: x.get(\"rank_score\", 0),\n\
+          \        reverse=True\n    )\n\n    # 给选中的来源额外编号\n    for index, source\
+          \ in enumerate(selected, start=1):\n        source[\"selection_rank\"] =\
+          \ index\n\n    return {\n        \"selected_sources\": selected\n    }"
+        code_language: python3
+        outputs:
+          selected_sources:
+            children: null
+            type: array[object]
+        selected: false
+        title: Select Sources
+        type: code
+        variables:
+        - value_selector:
+          - '1789115103181'
+          - ranked_sources
+          value_type: array[object]
+          variable: ranked_sources
+      height: 51
+      id: '1789115796995'
+      position:
+        x: 2238.120028732277
+        y: 0.19017641584048306
+      positionAbsolute:
+        x: 2238.120028732277
+        y: 0.19017641584048306
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 0
+    - data:
+        error_handle_mode: terminated
+        flatten_output: true
+        height: 564
+        is_parallel: false
+        iterator_input_type: array[object]
+        iterator_selector:
+        - '1789115796995'
+        - selected_sources
+        output_selector:
+        - '1789120705703'
+        - source
+        output_type: array[object]
+        parallel_nums: 10
+        selected: false
+        start_node_id: 1789118240503start
+        title: Crawl Sources
+        type: iteration
+        width: 979
+      height: 564
+      id: '1789118240503'
+      position:
+        x: 2715.8271681132665
+        y: -103.52073073178354
+      positionAbsolute:
+        x: 2715.8271681132665
+        y: -103.52073073178354
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 979
+      zIndex: 0
+    - data:
+        desc: ''
+        isInIteration: true
+        selected: false
+        title: ''
+        type: iteration-start
+      draggable: false
+      height: 48
+      id: 1789118240503start
+      parentId: '1789118240503'
+      position:
+        x: 24
+        y: 68
+      positionAbsolute:
+        x: 2739.8271681132665
+        y: -35.520730731783544
+      selectable: false
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom-iteration-start
+      width: 44
+      zIndex: 1001
+    - data:
+        code: "def main(item: dict) -> dict:\n    if not isinstance(item, dict):\n\
+          \        raise ValueError(f\"item must be object, got {type(item)}\")\n\n\
+          \    url = str(item.get(\"url\", \"\")).strip()\n\n    if not url:\n   \
+          \     raise ValueError(\"source url is empty\")\n\n    return {\n      \
+          \  \"url\": url,\n        \"domain\": str(item.get(\"domain\", \"\")).strip(),\n\
+          \        \"title\": str(item.get(\"title\", \"\")).strip(),\n        \"\
+          source_type\": str(item.get(\"source_type\", \"\")).strip(),\n        \"\
+          rank_score\": float(item.get(\"rank_score\", 0) or 0),\n        \"dimensions\"\
+          : item.get(\"dimensions\", []) or [],\n        \"snippet\": str(item.get(\"\
+          snippet\", \"\")).strip()\n    }"
+        code_language: python3
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1789118240503'
+        outputs:
+          dimensions:
+            children: null
+            type: array[string]
+          domain:
+            children: null
+            type: string
+          rank_score:
+            children: null
+            type: number
+          snippet:
+            children: null
+            type: string
+          source_type:
+            children: null
+            type: string
+          title:
+            children: null
+            type: string
+          url:
+            children: null
+            type: string
+        selected: false
+        title: Parse Source
+        type: code
+        variables:
+        - value_selector:
+          - '1789118240503'
+          - item
+          value_type: object
+          variable: item
+      height: 51
+      id: '1789118437209'
+      parentId: '1789118240503'
+      position:
+        x: 147.59528752309689
+        y: 157.2148393276252
+      positionAbsolute:
+        x: 2863.4224556363633
+        y: 53.69410859584167
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 1001
+    - data:
+        default_value:
+        - key: text
+          type: string
+          value: ''
+        - key: json
+          type: array[object]
+          value: '[]'
+        error_strategy: default-value
+        isInIteration: true
+        isInLoop: false
+        is_team_authorization: false
+        iteration_id: '1789118240503'
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Web link
+            ja_JP: Web link
+            pt_BR: URL da web
+            zh_Hans: 网页链接
+          input_schema: null
+          label:
+            en_US: URL
+            ja_JP: URL
+            pt_BR: URL
+            zh_Hans: 网址
+          llm_description: url para scraping
+          max: null
+          min: null
+          multiple: false
+          name: url
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: 'request parameters, format: {"key1": "value1", "key2": "value2"}
+
+              '
+            ja_JP: 'request parameters, format: {"key1": "value1", "key2": "value2"}
+
+              '
+            pt_BR: 'parâmetros de solicitação, formato: {"key1": "value1", "key2":
+              "value2"}
+
+              '
+            zh_Hans: '请求参数，格式：{"key1": "value1", "key2": "value2"}
+
+              '
+          input_schema: null
+          label:
+            en_US: Request params
+            ja_JP: Request params
+            pt_BR: Parâmetros de solicitação
+            zh_Hans: 请求参数
+          llm_description: request parameters
+          max: null
+          min: null
+          multiple: false
+          name: request_params
+          options: []
+          placeholder: null
+          precision: null
+          required: false
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: form
+          human_description:
+            en_US: css selector for scraping specific elements
+            ja_JP: css selector for scraping specific elements
+            pt_BR: css selector para scraping de elementos específicos
+            zh_Hans: css 选择器用于抓取特定元素
+          input_schema: null
+          label:
+            en_US: Target selector
+            ja_JP: Target selector
+            pt_BR: Seletor de destino
+            zh_Hans: 目标选择器
+          llm_description: css selector of the target element to scrape
+          max: null
+          min: null
+          multiple: false
+          name: target_selector
+          options: []
+          placeholder: null
+          precision: null
+          required: false
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: form
+          human_description:
+            en_US: css selector for waiting for specific elements
+            ja_JP: css selector for waiting for specific elements
+            pt_BR: css selector para aguardar elementos específicos
+            zh_Hans: css 选择器用于等待特定元素
+          input_schema: null
+          label:
+            en_US: Wait for selector
+            ja_JP: Wait for selector
+            pt_BR: Aguardar por seletor
+            zh_Hans: 等待选择器
+          llm_description: css selector of the target element to wait for
+          max: null
+          min: null
+          multiple: false
+          name: wait_for_selector
+          options: []
+          placeholder: null
+          precision: null
+          required: false
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: form
+          human_description:
+            en_US: Remove all images from the response.
+            ja_JP: Remove all images from the response.
+            pt_BR: Remove all images from the response.
+            zh_Hans: 从响应中删除所有图片。
+          input_schema: null
+          label:
+            en_US: Remove images
+            ja_JP: Remove images
+            pt_BR: Remove images
+            zh_Hans: 删除图片
+          llm_description: Remove all images from the response
+          max: null
+          min: null
+          multiple: false
+          name: remove_images
+          options: []
+          placeholder: null
+          precision: null
+          required: false
+          scope: null
+          template: null
+          type: boolean
+        - auto_generate: null
+          default: false
+          form: form
+          human_description:
+            en_US: 'Captions all images at the specified URL, adding ''Image [idx]:
+              [caption]'' as an alt tag for those without one. This allows downstream
+              LLMs to interact with the images in activities such as reasoning and
+              summarizing.'
+            ja_JP: 'Captions all images at the specified URL, adding ''Image [idx]:
+              [caption]'' as an alt tag for those without one. This allows downstream
+              LLMs to interact with the images in activities such as reasoning and
+              summarizing.'
+            pt_BR: 'Adiciona legendas a todas as imagens na URL especificada, adicionando
+              ''Imagem [idx]: [legenda]'' como uma tag alt para aquelas que não têm
+              uma. Isso permite que os modelos LLM inferiores interajam com as imagens
+              em atividades como raciocínio e resumo.'
+            zh_Hans: '为指定 URL 上的所有图像添加标题，为没有标题的图像添加“Image [idx]: [caption]”作为 alt
+              标签，以支持下游模型的图像交互。'
+          input_schema: null
+          label:
+            en_US: Image caption
+            ja_JP: Image caption
+            pt_BR: Legenda da imagem
+            zh_Hans: 图片说明
+          llm_description: Captions all images at the specified URL
+          max: null
+          min: null
+          multiple: false
+          name: image_caption
+          options: []
+          placeholder: null
+          precision: null
+          required: false
+          scope: null
+          template: null
+          type: boolean
+        - auto_generate: null
+          default: false
+          form: form
+          human_description:
+            en_US: A "Buttons & Links" section will be created at the end. This helps
+              the downstream LLMs or web agents navigating the page or take further
+              actions.
+            ja_JP: A "Buttons & Links" section will be created at the end. This helps
+              the downstream LLMs or web agents navigating the page or take further
+              actions.
+            pt_BR: Um "Botões & Links" section will be created at the end. This helps
+              the downstream LLMs or web agents navigating the page or take further
+              actions.
+            zh_Hans: 末尾将添加“按钮和链接”部分，方便下游模型或网络代理做页面导航或执行进一步操作。
+          input_schema: null
+          label:
+            en_US: Gather all links at the end
+            ja_JP: Gather all links at the end
+            pt_BR: Coletar todos os links ao final
+            zh_Hans: 将所有链接集中到最后
+          llm_description: Gather all links at the end
+          max: null
+          min: null
+          multiple: false
+          name: gather_all_links_at_the_end
+          options: []
+          placeholder: null
+          precision: null
+          required: false
+          scope: null
+          template: null
+          type: boolean
+        - auto_generate: null
+          default: false
+          form: form
+          human_description:
+            en_US: An "Images" section will be created at the end. This gives the
+              downstream LLMs an overview of all visuals on the page, which may improve
+              reasoning.
+            ja_JP: An "Images" section will be created at the end. This gives the
+              downstream LLMs an overview of all visuals on the page, which may improve
+              reasoning.
+            pt_BR: Um "Imagens" section will be created at the end. This gives the
+              downstream LLMs an overview of all visuals on the page, which may improve
+              reasoning.
+            zh_Hans: 末尾会新增“图片”部分，方便下游模型全面了解页面的视觉内容，提升推理效果。
+          input_schema: null
+          label:
+            en_US: Gather all images at the end
+            ja_JP: Gather all images at the end
+            pt_BR: Coletar todas as imagens ao final
+            zh_Hans: 将所有图片集中到最后
+          llm_description: Gather all images at the end
+          max: null
+          min: null
+          multiple: false
+          name: gather_all_images_at_the_end
+          options: []
+          placeholder: null
+          precision: null
+          required: false
+          scope: null
+          template: null
+          type: boolean
+        - auto_generate: null
+          default: null
+          form: form
+          human_description:
+            en_US: Use proxy to access URLs
+            ja_JP: Use proxy to access URLs
+            pt_BR: Use proxy to access URLs
+            zh_Hans: 利用代理访问 URL
+          input_schema: null
+          label:
+            en_US: Proxy server
+            ja_JP: Proxy server
+            pt_BR: Servidor de proxy
+            zh_Hans: 代理服务器
+          llm_description: Use proxy to access URLs
+          max: null
+          min: null
+          multiple: false
+          name: proxy_server
+          options: []
+          placeholder: null
+          precision: null
+          required: false
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: false
+          form: form
+          human_description:
+            en_US: Bypass the Cache
+            ja_JP: Bypass the Cache
+            pt_BR: Ignorar o cache
+            zh_Hans: 是否绕过缓存
+          input_schema: null
+          label:
+            en_US: Bypass the Cache
+            ja_JP: Bypass the Cache
+            pt_BR: Ignorar o cache
+            zh_Hans: 绕过缓存
+          llm_description: bypass the cache
+          max: null
+          min: null
+          multiple: false
+          name: no_cache
+          options: []
+          placeholder: null
+          precision: null
+          required: false
+          scope: null
+          template: null
+          type: boolean
+        - auto_generate: null
+          default: false
+          form: form
+          human_description:
+            en_US: When enabled, request results won't be cached on jina servers.
+            ja_JP: When enabled, request results won't be cached on jina servers.
+            pt_BR: When enabled, request results won't be cached on jina servers.
+            zh_Hans: 启用后，请求结果将不会被缓存在 jina 服务器上。
+          input_schema: null
+          label:
+            en_US: Do Not Cache/Track
+            ja_JP: Do Not Cache/Track
+            pt_BR: Do Not Cache/Track
+            zh_Hans: 请勿缓存/追踪
+          llm_description: Do Not Cache/Track
+          max: null
+          min: null
+          multiple: false
+          name: no_cache_track
+          options: []
+          placeholder: null
+          precision: null
+          required: false
+          scope: null
+          template: null
+          type: boolean
+        - auto_generate: null
+          default: false
+          form: form
+          human_description:
+            en_US: Enable summary for the output
+            ja_JP: Enable summary for the output
+            pt_BR: Habilitar resumo para a saída
+            zh_Hans: 为输出启用摘要
+          input_schema: null
+          label:
+            en_US: Enable summary
+            ja_JP: Enable summary
+            pt_BR: Habilitar resumo
+            zh_Hans: 是否启用摘要
+          llm_description: enable summary
+          max: null
+          min: null
+          multiple: false
+          name: summary
+          options: []
+          placeholder: null
+          precision: null
+          required: false
+          scope: null
+          template: null
+          type: boolean
+        - auto_generate: null
+          default: 3
+          form: form
+          human_description:
+            en_US: Number of times to retry the request if it fails
+            ja_JP: Number of times to retry the request if it fails
+            pt_BR: Número de vezes para repetir a solicitação se falhar
+            zh_Hans: 请求失败时重试的次数
+          input_schema: null
+          label:
+            en_US: Retry
+            ja_JP: Retry
+            pt_BR: Repetir
+            zh_Hans: 重试
+          llm_description: Number of times to retry the request if it fails
+          max: null
+          min: null
+          multiple: false
+          name: max_retries
+          options: []
+          placeholder: null
+          precision: null
+          required: false
+          scope: null
+          template: null
+          type: number
+        - auto_generate: null
+          default: default
+          form: form
+          human_description:
+            en_US: Control the level of detail in the response to prevent over-filtering.
+              The default pipeline is optimized for most websites and LLM input.
+            ja_JP: Control the level of detail in the response to prevent over-filtering.
+              The default pipeline is optimized for most websites and LLM input.
+            pt_BR: Controle o nível de detalhamento na resposta para evitar filtragem
+              excessiva. O pipeline padrão é otimizado para a maioria dos sites e
+              entradas do LLM.
+            zh_Hans: 控制响应中的细节级别，以防止过度过滤。默认管道针对大多数网站和大模型输入进行了优化。
+          input_schema: null
+          label:
+            en_US: Content Format
+            ja_JP: Content Format
+            pt_BR: Formato do conteúdo
+            zh_Hans: 内容格式
+          llm_description: Control the level of detail in the response to prevent
+            over-filtering
+          max: null
+          min: null
+          multiple: false
+          name: content_format
+          options:
+          - icon: ''
+            label:
+              en_US: Default
+              ja_JP: Default
+              pt_BR: Padrão
+              zh_Hans: 默认
+            value: default
+          - icon: ''
+            label:
+              en_US: Markdown
+              ja_JP: Markdown
+              pt_BR: Markdown
+              zh_Hans: Markdown
+            value: markdown
+          - icon: ''
+            label:
+              en_US: HTML
+              ja_JP: HTML
+              pt_BR: HTML
+              zh_Hans: HTML
+            value: html
+          - icon: ''
+            label:
+              en_US: Text
+              ja_JP: Text
+              pt_BR: Text
+              zh_Hans: Text
+            value: text
+          - icon: ''
+            label:
+              en_US: Screenshot
+              ja_JP: Screenshot
+              pt_BR: Captura de tela
+              zh_Hans: 截屏
+            value: screenshot
+          - icon: ''
+            label:
+              en_US: Pageshot
+              ja_JP: Pageshot
+              pt_BR: Snapshot da página
+              zh_Hans: 页面快照
+            value: pageshot
+          placeholder: null
+          precision: null
+          required: false
+          scope: null
+          template: null
+          type: select
+        params:
+          content_format: ''
+          gather_all_images_at_the_end: ''
+          gather_all_links_at_the_end: ''
+          image_caption: ''
+          max_retries: ''
+          no_cache: ''
+          no_cache_track: ''
+          proxy_server: ''
+          remove_images: ''
+          request_params: ''
+          summary: ''
+          target_selector: ''
+          url: ''
+          wait_for_selector: ''
+        plugin_id: langgenius/jina_tool
+        plugin_unique_identifier: langgenius/jina_tool:0.0.14@34acedc392175bc83ba1cb78ced9c134983e94488198a4641951b52075bfe555
+        provider_icon: https://cloud.dify.ai/console/api/workspaces/current/plugin/icon?tenant_id=91905c46-2c57-4412-ac6e-fb47e8b39008&filename=e98c06702a1675e097afc90224692cd7cf5a75a3320ac24a71cbd69ee919cd2c.svg
+        provider_icon_dark: https://cloud.dify.ai/console/api/workspaces/current/plugin/icon?tenant_id=91905c46-2c57-4412-ac6e-fb47e8b39008&filename=f3b58afe7e58f5bf2d7cb2b3fd6f889b297ff62a7fb8998844a60d8d16832a92.svg
+        provider_id: langgenius/jina_tool/jina
+        provider_name: langgenius/jina_tool/jina
+        provider_show_name: Jina AI
+        provider_type: builtin
+        selected: false
+        title: 获取单页面
+        tool_configurations:
+          content_format:
+            type: constant
+            value: default
+          gather_all_images_at_the_end:
+            type: constant
+            value: false
+          gather_all_links_at_the_end:
+            type: constant
+            value: false
+          image_caption:
+            type: constant
+            value: false
+          max_retries:
+            type: constant
+            value: 3
+          no_cache:
+            type: constant
+            value: false
+          no_cache_track:
+            type: constant
+            value: false
+          proxy_server:
+            type: mixed
+            value: null
+          remove_images:
+            type: constant
+            value: true
+          summary:
+            type: constant
+            value: false
+          target_selector:
+            type: mixed
+            value: null
+          wait_for_selector:
+            type: mixed
+            value: ''
+        tool_description: 获取目标网址（可以是 PDF），并将其转换为适合大模型处理的 Markdown 格式。
+        tool_label: 获取单页面
+        tool_name: jina_reader
+        tool_node_version: '2'
+        tool_parameters:
+          request_params:
+            type: mixed
+            value: ''
+          url:
+            type: mixed
+            value: '{{#1789118437209.url#}}'
+        type: tool
+      height: 409
+      id: '1789118921873'
+      parentId: '1789118240503'
+      position:
+        x: 429
+        y: 68
+      positionAbsolute:
+        x: 3144.8271681132665
+        y: -35.520730731783544
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 1001
+    - data:
+        code: "def main(\n    url: str,\n    title: str,\n    domain: str,\n    source_type:\
+          \ str,\n    rank_score: float,\n    dimensions: list,\n    page_text: str,\n\
+          \    snippet: str\n) -> dict:\n\n    page_text = (page_text or \"\").strip()\n\
+          \    snippet = (snippet or \"\").strip()\n\n    # 判断 Jina 是否返回了明显错误页\n \
+          \   error_signals = [\n        '\"code\": 451',\n        '\"status\": 45101',\n\
+          \        \"excluded from Jina Reader\",\n        \"cease automated access\"\
+          ,\n        \"error_message\"\n    ]\n\n    crawl_failed = (\n        not\
+          \ page_text\n        or any(signal in page_text for signal in error_signals)\n\
+          \    )\n\n    if crawl_failed:\n        content = snippet\n        crawl_status\
+          \ = \"fallback\"\n    else:\n        content = page_text\n        crawl_status\
+          \ = \"success\"\n\n    return {\n        \"source\": {\n            \"title\"\
+          : title,\n            \"url\": url,\n            \"domain\": domain,\n \
+          \           \"source_type\": source_type,\n            \"rank_score\": rank_score,\n\
+          \            \"dimensions\": dimensions,\n            \"page_content\":\
+          \ content,\n            \"crawl_status\": crawl_status\n        }\n    }"
+        code_language: python3
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1789118240503'
+        outputs:
+          source:
+            children: null
+            type: object
+        selected: false
+        title: Build Crawled Source
+        type: code
+        variables:
+        - value_selector:
+          - '1789118437209'
+          - url
+          value_type: string
+          variable: url
+        - value_selector:
+          - '1789118437209'
+          - domain
+          value_type: string
+          variable: domain
+        - value_selector:
+          - '1789118437209'
+          - title
+          value_type: string
+          variable: title
+        - value_selector:
+          - '1789118437209'
+          - source_type
+          value_type: string
+          variable: source_type
+        - value_selector:
+          - '1789118437209'
+          - rank_score
+          value_type: number
+          variable: rank_score
+        - value_selector:
+          - '1789118437209'
+          - dimensions
+          value_type: array[string]
+          variable: dimensions
+        - value_selector:
+          - '1789118921873'
+          - text
+          value_type: string
+          variable: page_text
+        - value_selector:
+          - '1789118437209'
+          - snippet
+          value_type: string
+          variable: snippet
+      height: 51
+      id: '1789120705703'
+      parentId: '1789118240503'
+      position:
+        x: 730
+        y: 68
+      positionAbsolute:
+        x: 3445.8271681132665
+        y: -35.520730731783544
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 1001
+    - data:
+        error_handle_mode: terminated
+        flatten_output: true
+        height: 488
+        is_parallel: false
+        iterator_input_type: array[object]
+        iterator_selector:
+        - '1789118240503'
+        - output
+        output_selector:
+        - '1789123637835'
+        - evidence
+        output_type: array[object]
+        parallel_nums: 10
+        selected: false
+        start_node_id: 1789122904698start
+        title: Extract Evidence
+        type: iteration
+        width: 849
+      height: 488
+      id: '1789122904698'
+      position:
+        x: 3783.5434597442872
+        y: -43.0176399186926
+      positionAbsolute:
+        x: 3783.5434597442872
+        y: -43.0176399186926
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 849
+      zIndex: 0
+    - data:
+        desc: ''
+        isInIteration: true
+        selected: false
+        title: ''
+        type: iteration-start
+      draggable: false
+      height: 48
+      id: 1789122904698start
+      parentId: '1789122904698'
+      position:
+        x: 24
+        y: 68
+      positionAbsolute:
+        x: 3807.5434597442872
+        y: 24.982360081307398
+      selectable: false
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom-iteration-start
+      width: 44
+      zIndex: 1001
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1789122904698'
+        model:
+          completion_params: {}
+          mode: chat
+          name: zai-org/GLM-4.5-Air
+          provider: langgenius/siliconflow/siliconflow
+        prompt_template:
+        - id: ef5fd2df-f1f9-4e3e-a8f8-c4eb3e1e18b6
+          role: system
+          text: "You are an evidence extraction assistant.\n\nExtract useful factual\
+            \ evidence from the source for the specified research dimensions.\n\n\
+            Rules:\n\n1. Only extract claims directly supported by the source content.\n\
+            2. Do not invent facts or add outside knowledge.\n3. Ignore navigation,\
+            \ advertising, boilerplate, and irrelevant content.\n4. Prefer concrete\
+            \ evidence such as:\n   - statistics\n   - dates\n   - market size\n \
+            \  - growth rates\n   - policies\n   - consumer behavior\n   - competitive\
+            \ landscape\n   - technology trends\n5. Each evidence item should contain\
+            \ only one main claim.\n6. If no useful evidence exists, return an empty\
+            \ list.\n7. Return no markdown and no explanation outside JSON.\n\nResearch\
+            \ dimensions:\n{{{#1789130377096.dimensions#}}\n\nSource title:\n{{{#1789130377096.title#}}\n\
+            \nSource URL:\n{{{#1789130377096.url#}}\n\nSource type:\n{{{#1789130377096.source_type#}}\n\
+            \nSource content:\n{{{#1789130377096.page_content#}}\n\nReturn ONLY:\n\
+            \n{\n  \"evidence\": [\n    {\n      \"dimension\": \"relevant research\
+            \ dimension\",\n      \"claim\": \"concise factual claim\",\n      \"\
+            support\": \"short evidence supporting the claim\",\n      \"importance\"\
+            : \"high\"\n    }\n  ]\n}"
+        reasoning_format: separated
+        selected: false
+        title: Evidence Extractor
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1789122946667'
+      parentId: '1789122904698'
+      position:
+        x: 431.8954105786761
+        y: 186.1283540692467
+      positionAbsolute:
+        x: 4215.438870322963
+        y: 143.11071415055412
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 1001
+    - data:
+        code: "import json\nimport re\n\ndef main(\n    text: str,\n    source_title:\
+          \ str,\n    source_url: str,\n    source_type: str,\n    rank_score: float\n\
+          ) -> dict:\n\n    text = (text or \"\").strip()\n\n    # 清理 ```json ...\
+          \ ```\n    text = re.sub(r\"^```(?:json)?\\s*\", \"\", text)\n    text =\
+          \ re.sub(r\"\\s*```$\", \"\", text)\n\n    start = text.find(\"{\")\n  \
+          \  end = text.rfind(\"}\")\n\n    if start == -1 or end == -1:\n       \
+          \ return {\n            \"evidence\": []\n        }\n\n    try:\n      \
+          \  data = json.loads(text[start:end + 1])\n    except json.JSONDecodeError:\n\
+          \        return {\n            \"evidence\": []\n        }\n\n    raw_evidence\
+          \ = data.get(\"evidence\", [])\n\n    if not isinstance(raw_evidence, list):\n\
+          \        return {\n            \"evidence\": []\n        }\n\n    result\
+          \ = []\n\n    for item in raw_evidence:\n        if not isinstance(item,\
+          \ dict):\n            continue\n\n        claim = str(item.get(\"claim\"\
+          , \"\")).strip()\n\n        if not claim:\n            continue\n\n    \
+          \    importance = str(\n            item.get(\"importance\", \"medium\"\
+          )\n        ).strip().lower()\n\n        if importance not in {\"high\",\
+          \ \"medium\", \"low\"}:\n            importance = \"medium\"\n\n       \
+          \ result.append({\n            \"dimension\": str(\n                item.get(\"\
+          dimension\", \"\")\n            ).strip(),\n\n            \"claim\": claim,\n\
+          \n            \"support\": str(\n                item.get(\"support\", \"\
+          \")\n            ).strip(),\n\n            \"importance\": importance,\n\
+          \n            \"source_title\": source_title,\n            \"source_url\"\
+          : source_url,\n            \"source_type\": source_type,\n            \"\
+          source_rank_score\": float(rank_score or 0)\n        })\n\n    return {\n\
+          \        \"evidence\": result\n    }"
+        code_language: python3
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1789122904698'
+        outputs:
+          evidence:
+            children: null
+            type: array[object]
+        selected: false
+        title: Parse Evidence
+        type: code
+        variables:
+        - value_selector:
+          - '1789122946667'
+          - text
+          value_type: string
+          variable: text
+        - value_selector:
+          - '1789130377096'
+          - url
+          value_type: string
+          variable: source_url
+        - value_selector:
+          - '1789130377096'
+          - source_type
+          value_type: string
+          variable: source_type
+        - value_selector:
+          - '1789130377096'
+          - title
+          value_type: string
+          variable: source_title
+        - value_selector:
+          - '1789130377096'
+          - rank_score
+          value_type: number
+          variable: rank_score
+      height: 51
+      id: '1789123637835'
+      parentId: '1789122904698'
+      position:
+        x: 567.0113443581295
+        y: 72.67835065620778
+      positionAbsolute:
+        x: 4350.554804102417
+        y: 29.66071073751518
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 1001
+    - data:
+        code: "def main(item: dict) -> dict:\n    if not isinstance(item, dict):\n\
+          \        raise ValueError(f\"item must be object, got {type(item)}\")\n\n\
+          \    return {\n        \"title\": str(item.get(\"title\", \"\")).strip(),\n\
+          \        \"url\": str(item.get(\"url\", \"\")).strip(),\n        \"domain\"\
+          : str(item.get(\"domain\", \"\")).strip(),\n        \"source_type\": str(item.get(\"\
+          source_type\", \"\")).strip(),\n        \"rank_score\": float(item.get(\"\
+          rank_score\", 0) or 0),\n        \"dimensions\": item.get(\"dimensions\"\
+          , []) or [],\n        \"page_content\": str(item.get(\"page_content\", \"\
+          \")).strip(),\n        \"crawl_status\": str(item.get(\"crawl_status\",\
+          \ \"\")).strip()\n    }"
+        code_language: python3
+        isInIteration: true
+        isInLoop: false
+        iteration_id: '1789122904698'
+        outputs:
+          crawl_status:
+            children: null
+            type: string
+          dimensions:
+            children: null
+            type: array[string]
+          domain:
+            children: null
+            type: string
+          page_content:
+            children: null
+            type: string
+          rank_score:
+            children: null
+            type: number
+          source_type:
+            children: null
+            type: string
+          title:
+            children: null
+            type: string
+          url:
+            children: null
+            type: string
+        retry_config:
+          max_retries: 3
+          retry_enabled: false
+          retry_interval: 1000
+        selected: false
+        title: Parse Crawled Source
+        type: code
+        variables:
+        - value_selector:
+          - '1789122904698'
+          - item
+          value_type: object
+          variable: item
+      height: 51
+      id: '1789130377096'
+      parentId: '1789122904698'
+      position:
+        x: 65.77884228984976
+        y: 200.21996013406948
+      positionAbsolute:
+        x: 3849.322302034137
+        y: 157.2023202153769
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 1001
+    - data:
+        code: "import json\nimport ast\n\n\ndef main(evidence: list) -> dict:\n  \
+          \  if not evidence:\n        return {\n            \"evidence_context\"\
+          : \"No valid evidence was collected.\",\n            \"sources_markdown\"\
+          : \"\",\n            \"evidence_count\": 0\n        }\n\n    source_ids\
+          \ = {}\n    sources = []\n    evidence_lines = []\n\n    for index, item\
+          \ in enumerate(evidence, start=1):\n\n        # -----------------------------\n\
+          \        # 兼容 Dify 把 Object 变成 String\n        # -----------------------------\n\
+          \        if isinstance(item, str):\n            text = item.strip()\n\n\
+          \            if not text:\n                continue\n\n            try:\n\
+          \                item = json.loads(text)\n            except json.JSONDecodeError:\n\
+          \                try:\n                    item = ast.literal_eval(text)\n\
+          \                except Exception:\n                    continue\n\n   \
+          \     # 最终必须是 dict\n        if not isinstance(item, dict):\n           \
+          \ continue\n\n        claim = str(\n            item.get(\"claim\", \"\"\
+          )\n        ).strip()\n\n        if not claim:\n            continue\n\n\
+          \        url = str(\n            item.get(\"source_url\", \"\")\n      \
+          \  ).strip()\n\n        title = str(\n            item.get(\"source_title\"\
+          , \"\")\n        ).strip()\n\n        dimension = str(\n            item.get(\"\
+          dimension\", \"\")\n        ).strip()\n\n        support = str(\n      \
+          \      item.get(\"support\", \"\")\n        ).strip()\n\n        importance\
+          \ = str(\n            item.get(\"importance\", \"medium\")\n        ).strip()\n\
+          \n        source_type = str(\n            item.get(\"source_type\", \"\"\
+          )\n        ).strip()\n\n        # 同一个 URL 只分配一个 Source ID\n        source_key\
+          \ = url or title\n\n        if not source_key:\n            source_key =\
+          \ f\"unknown-source-{index}\"\n\n        if source_key not in source_ids:\n\
+          \            source_id = f\"S{len(source_ids) + 1}\"\n            source_ids[source_key]\
+          \ = source_id\n\n            sources.append({\n                \"id\": source_id,\n\
+          \                \"title\": title,\n                \"url\": url\n     \
+          \       })\n\n        source_id = source_ids[source_key]\n\n        evidence_lines.append(\n\
+          \            f\"\"\"[Evidence {index}]\nDimension: {dimension}\nClaim: {claim}\n\
+          Support: {support}\nImportance: {importance}\nSource Type: {source_type}\n\
+          Source: [{source_id}] {title}\n\"\"\"\n        )\n\n    sources_markdown\
+          \ = \"\\n\".join(\n        f\"- [{source['id']}] [{source['title']}]({source['url']})\"\
+          \n        for source in sources\n        if source[\"url\"]\n    )\n\n \
+          \   return {\n        \"evidence_context\": \"\\n\".join(evidence_lines),\n\
+          \        \"sources_markdown\": sources_markdown,\n        \"evidence_count\"\
+          : len(evidence_lines)\n    }"
+        code_language: python3
+        outputs:
+          evidence_context:
+            children: null
+            type: string
+          evidence_count:
+            children: null
+            type: number
+          sources_markdown:
+            children: null
+            type: string
+        selected: false
+        title: Build Report Context
+        type: code
+        variables:
+        - value_selector:
+          - '1789122904698'
+          - output
+          value_type: array[string]
+          variable: evidence
+      height: 51
+      id: '1789131224516'
+      position:
+        x: 4657.728006601085
+        y: 66.96893833246736
+      positionAbsolute:
+        x: 4657.728006601085
+        y: 66.96893833246736
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 0
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: zai-org/GLM-4.5-Air
+          provider: langgenius/siliconflow/siliconflow
+        prompt_template:
+        - id: 7ad0611a-2d83-4275-970e-d2bdf0c73b7f
+          role: system
+          text: "You are a research report writer.\n\nWrite a concise but substantive\
+            \ research report based ONLY on the supplied evidence.\n\nRequirements:\n\
+            \n1. Answer the original research topic directly.\n2. Organize the report\
+            \ into meaningful sections based on the available research dimensions.\n\
+            3. Use only claims supported by the provided evidence.\n4. Do not invent\
+            \ statistics, companies, policies, dates, trends, or conclusions.\n5.\
+            \ When making a factual claim, cite the corresponding source using [S1],\
+            \ [S2], etc.\n6. Preserve disagreements or uncertainty when the evidence\
+            \ is conflicting or incomplete.\n7. Distinguish:\n   - observed facts\n\
+            \   - reasonable synthesis based on multiple sources\n8. Do not claim\
+            \ that the research is exhaustive.\n9. If evidence for an important dimension\
+            \ is weak or missing, explicitly state that limitation.\n10. Write in\
+            \ Chinese.\n11. Output Markdown.\n\nSuggested structure:\n\n# Research\
+            \ Report Title\n\n## Executive Summary\n\n## Key Findings\n\n## Analysis\
+            \ by Research Dimension\n\n## Risks / Limitations\n\n## Conclusion\n\n\
+            ## Sources"
+        - id: a7d77687-5c0d-4a42-a48d-d022f273137d
+          role: user
+          text: 'Research topic:
+
+
+            {{{#1789104648335.research_topic#}}
+
+
+            Evidence:
+
+
+            {{#1789131224516.evidence_context#}}
+
+
+            Source list:
+
+
+            {{{#1789131224516.sources_markdown#}}
+
+
+            Write the final report now.'
+        selected: false
+        title: Final Report Writer
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1789131912057'
+      position:
+        x: 4955.009653139761
+        y: -103.52073073178354
+      positionAbsolute:
+        x: 4955.009653139761
+        y: -103.52073073178354
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 0
     viewport:
-      x: -20.074350483658918
-      y: 291.9190445879807
-      zoom: 0.8312378961427874
+      x: 92.51566264024677
+      y: 113.73327890700568
+      zoom: 0.8312378961427875
   rag_pipeline_variables: []
