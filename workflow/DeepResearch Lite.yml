@@ -1,0 +1,236 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  icon_type: emoji
+  mode: workflow
+  name: DeepResearch Lite
+  use_icon_as_answer_icon: false
+dependencies:
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: langgenius/siliconflow:0.0.60@da35e834379c3c2abe0081ef1e2da9fce54bb18ae48cc3e9b3e7738816281fb4
+    version: null
+kind: app
+version: 0.7.0
+workflow:
+  conversation_variables: []
+  environment_variables: []
+  features:
+    file_upload:
+      allowed_file_extensions:
+      - .JPG
+      - .JPEG
+      - .PNG
+      - .GIF
+      - .WEBP
+      - .SVG
+      allowed_file_types:
+      - image
+      allowed_file_upload_methods:
+      - local_file
+      - remote_url
+      enabled: false
+      fileUploadConfig:
+        attachment_image_file_size_limit: 2
+        audio_file_size_limit: 50
+        batch_count_limit: 5
+        file_size_limit: 15
+        file_upload_limit: 50
+        image_file_batch_limit: 10
+        image_file_size_limit: 10
+        knowledge_file_size_limit: 15
+        single_chunk_attachment_limit: 10
+        skill_file_size_limit: 50
+        video_file_size_limit: 100
+        workflow_file_upload_limit: 10
+      image:
+        enabled: false
+        number_limits: 3
+        transfer_methods:
+        - local_file
+        - remote_url
+      number_limits: 3
+    opening_statement: ''
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions: []
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges:
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: llm
+      id: 1789104648335-source-1789104655245-target
+      source: '1789104648335'
+      sourceHandle: source
+      target: '1789104655245'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: end
+      id: 1789104655245-source-1789104658680-target
+      source: '1789104655245'
+      sourceHandle: source
+      target: '1789104658680'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    nodes:
+    - data:
+        selected: false
+        title: 用户输入
+        type: start
+        variables:
+        - default: ''
+          hint: ''
+          label: research_topic
+          options: []
+          placeholder: ''
+          required: true
+          type: text-input
+          variable: research_topic
+      height: 108
+      id: '1789104648335'
+      position:
+        x: 79
+        y: 249
+      positionAbsolute:
+        x: 79
+        y: 249
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+      zIndex: 0
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: deepseek-ai/DeepSeek-V4-Flash
+          provider: langgenius/siliconflow/siliconflow
+        prompt_config:
+          jinja2_variables: []
+        prompt_template:
+        - edition_type: basic
+          id: 1a85bd05-964a-4836-876b-9d60c6ce2a01
+          role: system
+          text: "# Role\n\nYou are a research query planning assistant.\n\nYour task\
+            \ is to decompose a broad research topic into multiple complementary search\
+            \ queries that can be used by a web search engine.\n\n# Requirements\n\
+            \n1. Generate 3 to 5 search queries.\n2. Each query must investigate a\
+            \ different important dimension of the research topic.\n3. Queries should\
+            \ be concise and suitable for a search engine.\n4. Avoid duplicate or\
+            \ highly similar queries.\n5. Preserve important entities, regions, industries,\
+            \ and time constraints from the original research topic.\n6. Do not answer\
+            \ the research question itself.\n7. Do not invent facts.\n8. Prefer queries\
+            \ that are likely to retrieve factual and evidence-based sources.\n\n\
+            # Freshness Rules\n\n1. Determine whether the research topic is time-sensitive.\n\
+            \n2. For time-sensitive topics such as:\n   - industry development\n \
+            \  - market size\n   - job market\n   - salary\n   - company landscape\n\
+            \   - policies and regulations\n   - investment and financing\n   - technology\
+            \ trends\n   - current status\n\n   prefer the most recent available information.\n\
+            \n3. If the user explicitly provides a year or time range, preserve that\
+            \ constraint.\n\n4. If the user does not specify a time range but the\
+            \ topic is time-sensitive,\n   prioritize the current year and recent\
+            \ data instead of arbitrarily using older years.\n\n5. Historical data\
+            \ may still be queried when it is useful for trend comparison,\n   but\
+            \ it should not replace current information.\n\n6. For topics that are\
+            \ not time-sensitive, do not add unnecessary year constraints.\n\n# Research\
+            \ Topic\n\n{{{#1789104648335.research_topic#}}\n\n# Current Date\n2026-09-11\n\
+            \n# Output\n\nReturn structured data matching the configured schema."
+        selected: false
+        structured_output:
+          schema:
+            additionalProperties: false
+            properties:
+              queries:
+                description: Complementary search queries for the research topic
+                items:
+                  additionalProperties: false
+                  properties:
+                    dimension:
+                      description: The research dimension covered by this query
+                      type: string
+                    query:
+                      description: A concise query suitable for a web search engine
+                      type: string
+                  required:
+                  - query
+                  - dimension
+                  type: object
+                maxItems: 5
+                minItems: 3
+                type: array
+            required:
+            - queries
+            type: object
+        structured_output_enabled: true
+        title: LLM
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1789104655245'
+      position:
+        x: 388
+        y: 270
+      positionAbsolute:
+        x: 388
+        y: 270
+      selected: true
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 0
+    - data:
+        outputs:
+        - value_selector:
+          - '1789104655245'
+          - structured_output
+          value_type: object
+          variable: structured_output
+        selected: false
+        title: 输出
+        type: end
+      height: 87
+      id: '1789104658680'
+      position:
+        x: 692
+        y: 270
+      positionAbsolute:
+        x: 692
+        y: 270
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+      zIndex: 0
+    viewport:
+      x: -283
+      y: 183
+      zoom: 1
+  rag_pipeline_variables: []
